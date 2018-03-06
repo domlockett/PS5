@@ -33,14 +33,20 @@ setGeneric(name = "integrateIt",
 #' @export
 setMethod(f = "integrateIt",
           definition = function(x, y, bounds, rule){
+            # we set up the specifications we need to perform analysis
             a<-bounds[1]
             b<-bounds[2]
+            #set up min max
             h<-(b-a)/(length(x)-1)
+            #set up h
             if(identical(rule,"Trap")){
+              #if trap do this
               trap<-h/2*(2*sum(y)-y[1]-y[length(y)])
+              #perform trapezoid analysis
               return(new("Trapezoid", x = x, y = y, result = trap))
             }
             else if(identical(rule,"Simpson")){
+              #otherwise perfrom Simpson analysis
               s<-h/3*(y[1]+y[length(y)])
               for(i in 2:(length(y)-1)){
                 if(i%%2==0){
@@ -55,5 +61,5 @@ setMethod(f = "integrateIt",
           }
 )
 
-
+?integrateIt
 

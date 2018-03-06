@@ -3,6 +3,7 @@
 export(integrateIt)
 export(printSimpson)
 export(printTrapezoid)
+export(tolTest)
 exportClasses(Simpson)
 exportClasses(Trapezoid)
 exportMethods(initialize)

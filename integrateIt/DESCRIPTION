@@ -3,14 +3,15 @@ Title: Integrating using 'Simpson' or 'Trapezoid' rule
 Version: 0.1
 Author: Dominique Lockett 
 Maintainer: DML <dlockett@wustl.edu>
-Description: 
+Description: Area underneath a curve
 Depends:
     R (>= 3.0.0)
-License: 
+License: avc
 Suggests:
     devtools
 Collate:
     'integrateIt.R'
     'Simpson.R'
     'Trapezoid.R'
+    'toltest.R'
 RoxygenNote: 6.0.1
