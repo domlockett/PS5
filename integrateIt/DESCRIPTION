@@ -1,13 +1,8 @@
-<<<<<<< HEAD
 Package: integrateIt
-=======
-Package: squaresPack
->>>>>>> b4ebf25e9c8d94f315e9708f47cc9df76f697805
-Title: 
+Title: Integrating using 'Simpson' or 'Trapezoid' rule
 Version: 0.1
-Authors@R: 
-Author: RTM
-Maintainer: rtm <rtm@email.edu>
+Author: Dominique Lockett 
+Maintainer: DML <dlockett@wustl.edu>
 Description: 
 Depends:
     R (>= 3.0.0)
@@ -15,9 +10,8 @@ License:
 Suggests:
     devtools
 Collate:
-<<<<<<< HEAD
     'integrateIt.R'
     'print.R'
-    'class.R'
-=======
+    'classsimp.R'
+    'classtrap.R'
 RoxygenNote: 6.0.1
