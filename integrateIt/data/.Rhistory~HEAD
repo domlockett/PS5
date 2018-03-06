@@ -1,0 +1,15 @@
+## This can be run many times as the code is updates
+current.code <- as.package("integrateIt")
+library(devtools)
+library(roxygen2)
+## This can be run many times as the code is updates
+current.code <- as.package("integrateIt")
+setwd("C:/Users/Dominique/OneDrive/Documents/Spring 2018/Applied Statistical Programming/git/Week 8/PS5")
+## This can be run many times as the code is updates
+current.code <- as.package("integrateIt")
+load_all(current.code)
+setwd("C:/Users/Dominique/OneDrive/Documents/Spring 2018/Applied Statistical Programming/git/Week 8/PS5/integrateIt")
+## This can be run many times as the code is updates
+current.code <- as.package("integrateIt")
+load_all(current.code)
+document(current.code)
