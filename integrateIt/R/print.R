@@ -1,4 +1,27 @@
-
+#' Print values
+#'
+#' Print the Integrated value of vectors
+#'
+#' @param x A numeric object
+#' @param y A numeric object with the same dimensionality as \code{x}.
+#'
+#' @return An object of class Trapezoid or Simpson containing
+#'  \item{bounds}{The integral of the x and y values}
+#'  \item{x}{The first object input} 
+#'  \item{y}{The second object input}
+#'  \item{trap}
+#'  \item{simp}
+#' @author Dominique M. Lockett
+#' @note This is not a very simple function
+#' @examples
+#' 
+#' myx<-seq(1,11,1)
+#' myy<-seq(11,21,1)
+#' integrateIt(x,y,bounds=c(1,10), rule="trap")
+#' @seealso 
+#' @rdname integrateIt
+#' @aliases integrateIt,ANY-method
+#' @export
 setGeneric(name="print",
            def=function(x, y, bounds, rule,...)
            {standardGeneric("print")}

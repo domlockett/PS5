@@ -1,4 +1,28 @@
-setwd("C:/Users/Dominique/OneDrive/Documents/Spring 2018/Applied Statistical Programming/git/Week 8/PS5")
+#' Integrating values
+#'
+#' Finds the Integrated value of vectors
+#'
+#' @param x A numeric object
+#' @param y A numeric object with the same dimensionality as \code{x}.
+#'
+#' @return An object of class Trapezoid or Simpson containing
+#'  \item{bounds}{The integral of the x and y values}
+#'  \item{x}{The first object input} 
+#'  \item{y}{The second object input}
+#'  \item{trap}
+#'  \item{simp}
+#' @author Dominique M. Lockett
+#' @note This is not a very simple function
+#' @examples
+#' 
+#' myx<-seq(1,11,1)
+#' myy<-seq(11,21,1)
+#' integrateIt(x,y,bounds=c(1,10), rule="trap")
+#' @seealso 
+#' @rdname integrateIt
+#' @aliases integrateIt,ANY-method
+#' @export
+
 setGeneric(name="integrateIt",
            def=function(x, y, bounds, rule)
            {standardGeneric("integrateIt")}
@@ -35,17 +59,7 @@ setMethod(f="integrateIt",
               return(new("Simpson", result=sum(simpintegr), x = x, y = y))}
           }
 )
-x<-c(0:10)
-y<-seq(0,20,2)
-integrateIt(x,y,bounds=c(0,10), rule="trap")
-integrateIt(x,y,bounds=c(0,10), rule="simp")
-
-library(devtools)
-library(roxygen2)
-## This is run once when the package strcuture is first created
-
-
-## This can be run many times as the code is updates
-current.code <- as.package("integrateIt")
-load_all(current.code)
-document(current.code)
+x<-seq(1,11,1)
+y<-seq(11,21,1)
+integrateIt(x,y,bounds=c(1,10), rule="trap")
+integrateIt(x,y,bounds=c(1,10), rule="simp")
