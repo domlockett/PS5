@@ -11,7 +11,6 @@ Suggests:
     devtools
 Collate:
     'integrateIt.R'
-    'print.R'
-    'classsimp.R'
-    'classtrap.R'
+    'Simpson.R'
+    'Trapezoid.R'
 RoxygenNote: 6.0.1
