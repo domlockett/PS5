@@ -5,6 +5,3 @@ export(integrateIt)
 export(print)
 export(class)
 =======
-export(addSquares)
-export(subtractSquares)
->>>>>>> b4ebf25e9c8d94f315e9708f47cc9df76f697805
